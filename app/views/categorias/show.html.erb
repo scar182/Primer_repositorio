@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+<h1>  <%= @categoria.nombre %> </h1>
+</p>
+
+<% @categoria.notas.each do |nota| %>
+	<%=  notas.titulo, nota %> <br />>
+<% end %>
+
+<br />
+<br />
+
+<%= link_to 'Edit', edit_categoria_path(@categoria) %> |
+<%= link_to 'Back', categorias_path %>

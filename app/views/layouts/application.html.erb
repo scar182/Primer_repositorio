@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inmobiliaria</title>
+  <%= stylesheet_link_tag    "application","estatica" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="contenedor">
+	<div id="header">
+		<h1>Titulo General</h1>
+		
+		<ul>
+			<li><%= link_to "Inicio", root_path%> </li>
+			<li> <%= link_to "Contacto", contacto_path%> </li>
+			<li><%= link_to "Somos", somos_path%></li>
+		</ul>
+	</div>
+</div>
+<%= yield %>
+
+</body>
+</html>
